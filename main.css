@@ -1,0 +1,533 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+	height: 6000px; 
+	direction: rtl;
+	font-family:"noto";
+}
+.main-site{
+
+}
+@font-face{
+	font-family:"noto";
+	src:url("../webfonts/NotoKufiArabic-Regular.woff");
+}
+
+.section{
+	padding: 60px 0;
+}
+p{
+	font-size: 15px;
+	color:#A4A4A4;
+}
+h1{
+	font-size: 25px;
+	font-weight: bold;
+}
+.header .navbar.activetooo{
+	background-color: #00377b !important;
+}
+
+/*--------------------Start Global---------------*/
+/*--------------------End Global---------------*/
+
+/*--------------------Start NavBar---------------*/
+.header .navbar {
+	position:fixed;
+	width:100%;
+	background-color:transparent !important;
+	z-index: 999;
+}
+@media(max-width:991px){
+	.header .navbar{
+		background-color:#00377b !important
+	}
+	
+}
+.header .navbar .navbar-nav .nav-item{
+	margin-left: 60px;
+}
+.header .navbar .navbar-nav .nav-item .nav-link{
+	color:#fff;
+	position: relative;
+	transition: all .5s ease-in-out;
+}
+.header .navbar .navbar-nav .nav-item .nav-link.active{
+	color:#FFB549;
+	font-weight: 600;
+}
+.header .navbar .navbar-nav .nav-item .nav-link.active::before{
+	position: absolute;
+	width:11px;
+	height: 11px;
+	background-color: #FFB549;
+	content: "";
+	bottom:-5px;
+	left:30px;
+	border-radius: 50%;
+}
+.header .navbar .navbar-nav .nav-item .nav-link:hover{
+	color:#FFB549;
+}
+/*--------------------End NavBar---------------*/
+
+/*--------------------Start Landing---------------*/
+.landing{
+	background-image: url("../images/Path%2030.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+}
+.landing .the-landing-details{
+	display: flex;
+	justify-content: space-between;
+}
+.landing .the-landing-details .landing-content{
+	margin-top: 50px;
+	text-align: center;
+	padding: 0px 30px;
+}
+.landing .the-landing-details .landing-content .landing-logo{
+	margin-bottom:40px;
+}
+.landing .the-landing-details .landing-content  h6{
+	font-size: 20px;
+    color: #C5BDBD;
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+.landing .the-landing-details .landing-content a{
+	width: 190px;
+    height: 45px;
+    padding: 7px 73px;
+    background-color: #ffb549;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 30px;
+    box-shadow: 0px 3px 6px #ffb549;
+	transition: all .5s ease-in-out;
+}
+.landing .the-landing-details .landing-content a:hover{
+	background-color: #fff;
+	color:#ffb549;
+}
+@media(max-width:768px){
+	.landing .the-landing-details{
+		 flex-direction: column;
+	}
+	.landing .the-landing-details .landing-illustration{
+		width:300px;
+		height: 300px;
+		margin: auto;
+	}
+	.landing .the-landing-details .landing-content  h6{
+		font-size: 17px
+	}
+	.landing .the-landing-details .landing-content a{
+		width: 160px;
+		height: 35px;
+		padding: 5px 50px;
+		border-radius: 50px;
+	}
+}
+/*--------------------End Landing---------------*/
+
+/*--------------------Start How---------------*/
+.how-zedy .how-content{
+	text-align: right;
+}
+.how-zedy .how-content h1{
+	font-size: 25;
+	font-weight: bold;
+	margin-bottom: 40px;
+	
+}
+.how-zedy .how-content p{
+	font-size: 15px;
+	color:#A4A4A4;
+	margin-bottom: 70px;
+	line-height: 2;
+	
+}
+.how-zedy .how-content a{
+	width:190px;
+	height: 45px;
+	padding: 7px 73px;
+	background-color: #ffb549;
+	color:#fff;
+	text-decoration: none;
+	border-radius: 30px;
+	box-shadow: 0px 3px 6px #ffb549;
+	transition: .5s all ease-in-out;
+	
+}
+.how-zedy .how-content a:hover{
+	background-color: #fff;
+	color:#ffb549;
+	
+}
+.how-zedy .how-photo img{
+	text-align: center;
+	
+}
+@media(max-width:767px){
+	.how-zedy .how-photo{
+		text-align: right;
+	}
+	.how-zedy .how-photo img{
+		margin-top: 50px;	
+	}
+	.how-zedy .how-content h1{
+		font-size: 23px
+	}
+	.how-zedy .how-content p{
+		font-size: 14px;
+	}
+	
+}
+/*--------------------End How---------------*/
+
+/*--------------------Start Services---------------*/
+.services .serivce-line{
+	background-color: #0b367d;
+	margin: auto;
+	width: 130px;
+	height: 3px;
+}
+.services .serivce-line span{
+	margin: auto;
+	background-color: #ffb549;
+	width:30px;
+	height: 3px;
+	position: relative;
+	display: block;
+	
+}
+.services .our-services{
+	padding: 65px 0;
+	
+}
+.services .our-services .service-deatils{
+	box-shadow: 3px 6px 6px #eee;
+	padding: 35px 15px;
+	margin-bottom: 65px;
+	position: relative;
+	transition: all .5s ease-in-out;
+}
+.services .our-services .service-deatils:hover {
+	background-color: #10357e;
+	transform: translateY(-.5rem) scale(1.04);
+	transition: all .5s ease-in-out;
+}
+.services .our-services .service-deatils i{
+	margin-bottom: 20px;
+	font-size: 60px;
+	color:#10357e;
+}
+.services .our-services .service-deatils:hover i{
+	color: #FFB549;
+}
+.services .our-services .service-deatils h4{
+	font-size: 18px;
+	margin-bottom: 10px;
+}
+.services .our-services .service-deatils:hover h4{
+	color:#fff;
+}
+.services .our-services .service-deatils a{
+	font-size: 16px;
+	color:#ffb549;
+	text-decoration: none;
+	position: relative;
+}
+.services .our-services .service-deatils a::before{
+	content: "";
+	position: absolute;
+	height: 2px;
+	background-color: #ffb549;
+	bottom: 10px;
+	left:10px;
+}
+.services .our-services .service-deatils a:hover:before{
+	width:30px;
+}
+/*--------------------End Services---------------*/
+
+/*--------------------Start Why---------------*/
+.why{
+	background-image: url("../images/Group 125.png");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	padding: 50px 0;
+}
+.why .why-header h1 {
+	color:#fff;
+	font-size: 25px;
+	font-weight: 600;
+	margin-bottom: 15px;
+	position: relative;
+	
+}
+.why .why-header .line{
+	margin: auto;
+	width:135px;
+	background-color:#ffb549;
+	height:3px;
+	margin-bottom: 80px;
+}
+.why .why-details i{
+	
+	width:60px;
+	height: 60px;
+	background-color: #fff;
+	line-height: 60px;
+	text-align: center;
+	float: right;
+	margin-left: 30px;
+	border-radius: 5px;
+	font-size: 25px;
+	color:#ffb549;
+	background-color: #00377b;
+	border:none;
+}
+.why .why-details .why-content{
+	text-align: right;
+	margin-bottom: 60px;
+}
+.why .why-details .why-content h3{
+	font-size: 22px;
+	color:#fff;
+}
+.why .why-details .why-content p{
+	font-size: 14px;
+}
+/*--------------------End Why---------------*/
+
+
+/*--------------------Start where-find---------------*/
+.where-find .state h1{
+	margin-bottom: 40px;
+}
+.where-find .state ul {
+	width: 50%;
+	float: right;;
+}
+.where-find .state ul:nth-of-type(1) li{
+	margin-bottom: 15px;
+	color:#A4A4A4;
+	font-size: 15px;
+}
+.where-find .state ul:nth-of-type(2) li{
+	margin-bottom: 10px;
+}
+.where-find .state ul li span{
+	margin-left: 155px;
+	color:#A4A4A4;
+	font-size: 15px;
+}
+/*--------------------End where-find---------------*/
+
+/*--------------------Start Our-team--------------*/
+.team .our-team{
+	padding: 40px 0;
+}
+.team .our-team .member-photo{
+	text-align: center;
+}
+.team .our-team .team-detail {
+	background-color: #eee;
+	padding: 10px;
+	margin-bottom:25px;
+}
+.team .our-team .member-photo img{
+	width:100%;
+	border: 4px solid #fff;
+	margin-bottom: 15px;
+	transition: all .5s ease-in-out;
+}
+.team .our-team .member-photo:hover img{
+	border: 4px solid #ffb549;
+}
+.team .our-team h6{
+	font-size: 15px;
+	color:#00377b;
+	text-align: center;
+	font-weight: 600;
+	transition: all .5s ease-in-out;
+}
+.team .our-team span{
+	color:#A4A4A4;
+	font-size: 15px;
+	text-align: center;
+	display: block;
+	margin-bottom: 20px;
+}
+
+/*--------------------End Our-team--------------*/
+
+/*--------------------Start Our-work--------------*/
+.our-works{
+	background-image: url("../images/Group 126.png");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	padding: 50px 0;
+}
+.our-works .works h1 {
+	color:#fff;
+	font-size: 25px;
+	font-weight: 600;
+	margin-bottom: 15px;
+	position: relative;
+	
+}
+.our-works .works .line{
+	margin: auto;
+	width:135px;
+	background-color:#ffb549;
+	height:3px;
+	margin-bottom: 80px;
+}
+.our-works .the-works h5{
+	font-size: 20px;
+	color:#ffb549;
+	margin-bottom: 40px;
+}
+.our-works .the-works .work-logo{
+	background-color: #fff;
+	max-width: 250px;
+	padding: 15px 70px;
+	margin: auto;
+	border-radius: 5px;
+	height: 140px;
+	margin-bottom: 20px;
+}
+
+/*--------------------End Our-work--------------*/
+
+/*--------------------Start Our-Clinets--------------*/
+.our-clients .clients-logo{
+	padding: 40px 0;
+}
+.our-clients h1{
+	margin-top: 50px;
+}
+.our-clients .clients-logo .client-photo{
+	background-color: #10357e;
+	max-width: 150px;
+	max-height: 150px;
+	text-align: center;
+	border-radius: 50%;
+	line-height:150px;
+	margin-bottom: 30px;
+}
+
+/*--------------------End Our-Clinets--------------*/
+
+/*--------------------Start Contact--------------*/
+.contact{
+	background-image: url("../images/Path%20428.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 60px 0;
+}
+.contact .contact-header h1{
+	color:#fff;
+	margin-bottom: 25px;
+}
+.contact .contact-header ul li{
+	display: inline-block;
+	margin-left: 40px;
+}
+.contact .contact-header ul li span{
+	color:#A4A4A4;
+	margin-left: 10px;
+}
+.contact .footer{
+	padding: 20px;
+}
+.contact .footer h4{
+	font-size: 16px;
+	color:#fff;
+	margin-bottom: 30px;
+}
+.contact .footer input::placeholder{
+	font-size: 13px;
+	color:#888;
+}
+.contact .footer input{
+	margin-bottom: 35px;
+}
+.contact .footer button{
+    width: 300px;
+    height: 45px;
+    border-radius: 30px;
+    border: none;
+    background-color: #ffb549;
+    color: #fff;
+	margin-bottom: 50px;
+	box-shadow: 0px 3px 6px #FFB549;
+	transition: all .5s ease-in-out;
+	cursor: pointer;
+}
+.contact .footer button:hover{
+	background-color: #fff;
+	color:#ffb549;
+}
+.contact .footer .zedy-footer{
+	margin-bottom: 50px;
+}
+.contact .footer ul li{
+	display: inline-block;
+	margin-right:47px;
+	color:#fff;
+}
+.contact .footer ul li i{
+	font-size:32px;
+	transition: all .5s ease-in-out;
+	cursor: pointer;
+}
+.contact .footer ul li i:hover{
+	color:#ffb549;
+}
+@media(max-width:768px){
+	.contact .footer .zedy-footer{
+		text-align: center;
+	}
+	.contact .footer ul{
+		text-align: center;
+		
+	}
+}
+/*--------------------End Contact--------------*/
+/*--------------------Start Scroll Button--------------*/
+.sroll-button i{
+      position: fixed;
+      bottom: 10px;
+      right: 10px;
+      background-color:#ffb84f;
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+      color: #0b367d;
+      border: 2px solid #fff;
+      font-size: 20px;
+      display: none;
+      cursor: pointer
+}
+/*--------------------End Scroll Button--------------*/
+
+
+
+
+
