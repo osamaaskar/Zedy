@@ -4,7 +4,6 @@
   box-sizing: border-box;
 }
 body {
-	height: 6000px; 
 	direction: rtl;
 	font-family:"noto";
 }
@@ -38,7 +37,7 @@ h1{
 .header .navbar {
 	position:fixed;
 	width:100%;
-	background-color:transparent !important;
+	background-image: linear-gradient(to right, #00377b, #323183); !important;
 	z-index: 999;
 }
 @media(max-width:991px){
@@ -434,6 +433,101 @@ h1{
 /*--------------------End Our-Clinets--------------*/
 
 /*--------------------Start Contact--------------*/
+
+
+
+
+/*--------------------Start Client page--------------*/
+.our-clients-page {
+	padding-top: 100px;
+}
+.our-clients-page .section-header .serivce-line{
+	background-color: #0b367d;
+	margin: auto;
+	width: 130px;
+	height: 3px;
+}
+.our-clients-page .section-header .serivce-line span{
+	margin: auto;
+	background-color: #ffb549;
+	width:30px;
+	height: 3px;
+	position: relative;
+	display: block;
+}
+.our-clients-page .c-details{
+	padding:50px 0;
+}
+.our-clients-page .c-details .c-client{
+	background-color: #eee;
+	padding: 10px;
+	box-shadow:  4px 4px  6px #aaa;
+	margin-bottom: 30px;
+}
+.our-clients-page .c-details .c-client .c-brand{
+	background-color: #01377b;
+	margin-bottom: 20px;
+
+}
+/*--------------------End Client page--------------*/
+
+
+
+
+/*--------------------Start Our team page--------------*/
+
+.one-of-team{
+	padding: 160px 0px;
+}
+.one-of-team .t-content{
+	text-align: right;
+}
+.one-of-team .t-content h1{
+	margin-bottom: 20px;
+}
+.one-of-team .t-content>span{
+	color:#00377b;
+	font-weight: bold;
+	margin-bottom: 20px;
+	display: block;
+}
+.one-of-team .t-content p{
+	font-size: 14px;
+	line-height: 2;
+}
+.one-of-team .t-content ul li{
+	margin-bottom: 20px;
+}
+.one-of-team .t-content ul li:last-of-type{
+	margin-bottom: 40px;
+}
+.one-of-team .t-content ul li i{
+	margin-left: 10px;
+}
+.one-of-team .t-content ul li span{
+	color:#A4A4A4;
+}
+.one-of-team .t-content .cv{
+	width:200px;
+	height: 45px;
+	padding: 7px 73px;
+	background-color: #ffb549;
+	color:#fff;
+	text-decoration: none;
+	border-radius: 30px;
+	box-shadow: 0px 3px 6px #ffb549;
+	transition: .5s all ease-in-out;
+
+}
+.one-of-team .t-photo {
+	text-align: center;
+}
+@media(max-width:768px){
+	.one-of-team .t-photo{
+		margin-top: 40px;
+	}
+}
+/*--------------------End Our team page--------------*/
 .contact{
 	background-image: url("../images/Path%20428.png");
 	background-repeat: no-repeat;
